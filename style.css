@@ -75,8 +75,8 @@ body {
     min-width: 320px;
     overflow-x: hidden;
     word-wrap: break-word;
-    /* background-color: #131A2D; */
-    background: radial-gradient(circle at bottom, navy 0, #120b17 100%);
+    background-color: #0c1562;
+    /* background: radial-gradient(circle at bottom, navy 0, #120b17 100%); */
 }
 
 body:before {
@@ -144,7 +144,7 @@ spoiler-text {
     text-stroke: 0;
     color: transparent;
     cursor: pointer;
-    transition: color 0.1s ease-in-out;
+    transition: color 0.1s ease;
 }
 
 spoiler-text.active {
@@ -307,43 +307,40 @@ a {
     right: auto;
 }
 
-body.is-instant #main, body.is-instant #main > .inner > *,body.is-instant #main > .inner > section > * {
-    transition: none !important;
-}
-
-body.is-instant:after {
-    display: none !important;
-    transition: none !important;
-}
-
 .image {
     display: block;
     line-height: 0;
     max-width: 100%;
-    background: transparent !important;
     position: relative;
 }
 
 .image .frame {
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
     display: inline-block;
     max-width: 100%;
     overflow: hidden;
     vertical-align: top;
     width: 100%;
-    background: transparent !important;
-    box-shadow:
-    0 0 60px 30px #fff,  /* inner white */
-    0 0 100px 60px #f0f, /* middle magenta */
-    0 0 140px 90px #0ff; /* outer cyan */
+    filter: drop-shadow(0 0 3rem rgb(50, 150, 222));
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    -webkit-transition: all 0.5s ease !important;
+    -moz-transition: all 0.5s ease !important;
+    -ms-transition: all 0.5s ease !important;
+    -o-transition: all 0.5s ease !important;
+    transition: all 0.5s ease !important;
 }
 
 .image .frame img {
     border-radius: 0 !important;
     max-width: 100%;
     vertical-align: top;
+    cursor: pointer;
     width: inherit;
+    width: 20rem;
+}
+
+.image .frame:hover {
+     transform:scale(1.2);
 }
 
 .image.full .frame {
@@ -394,6 +391,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text04 {
     font-weight: bold;
+    margin-bottom: 3rem;
 }
 
 h1.style1, h2.style1, h3.style1, p.style1 {
