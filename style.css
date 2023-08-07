@@ -18,6 +18,38 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     vertical-align: baseline;
 }
 
+.asset-container {
+    display: flex;
+
+}
+
+.style4 {
+    width: 70%;
+    margin: auto;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-icon {
+   width: 10rem;
+}
+
+.asset-container img {
+    max-width: 50%;
+    padding: 2rem;
+}
+
+.product-image {
+    width: 80%;
+}
+
+.nugget-image {
+    width: 30%;
+}
+
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display: block;
 }
@@ -320,9 +352,9 @@ a {
     overflow: hidden;
     vertical-align: top;
     width: 100%;
-    filter: drop-shadow(0 0 3rem rgb(50, 150, 222));
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 4rem rgb(0,255,255));
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
     -webkit-transition: all 0.5s ease !important;
     -moz-transition: all 0.5s ease !important;
     -ms-transition: all 0.5s ease !important;
@@ -445,6 +477,10 @@ h1.style2 a:hover, h2.style2 a:hover, h3.style2 a:hover, p.style2 a:hover {
 
 h1.style2 span.p:nth-child(n + 2), h2.style2 span.p:nth-child(n + 2), h3.style2 span.p:nth-child(n + 2), p.style2 span.p:nth-child(n + 2) {
     margin-top: 1rem;
+}
+
+.style3 {
+    font-weight: bold !important;
 }
 
 h1.style3, h2.style3, h3.style3, p.style3 {
