@@ -46,6 +46,37 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     width: 80%;
 }
 
+@media (max-width: 768px) {
+    .asset-container{
+      flex-direction: column;
+    }
+
+    .button {
+        margin-bottom: 1rem;
+    }
+
+    #puzzle-logo {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .style3 {
+        font-size: 30px !important;
+    }
+
+    #text01 {
+        font-size: 23px;
+    }
+
+    .nugget-image {
+        width: 200px !important;
+    }
+
+    .teams {
+        display: none;
+    }
+  }
+
 .nugget-image {
     width: 30%;
 }
